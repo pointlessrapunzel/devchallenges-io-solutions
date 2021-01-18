@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://pointlessrapunzel.github.io/devchallenges-io-solutions/responsive/404-not-found/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/pointlessrapunzel/devchallenges-io-solutions/tree/main/responsive/404-not-found">
       Solution
     </a>
     <span> | </span>
