@@ -29,8 +29,10 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
-
-![Desktop screenshot](./screenshots/desktop-screenshot.png) ![Mobile screenshot](./screenshots/mobile-screenshot.png)
+<div align="top">
+   <img src="./screenshots/desktop-screenshot.png" alt="Desktop screenshot" width="73%"/>
+   <img src="./screenshots/mobile-screenshot.png" alt="Mobile screenshot" width="21%"/> 
+</div>
 
 ### Built With
 
