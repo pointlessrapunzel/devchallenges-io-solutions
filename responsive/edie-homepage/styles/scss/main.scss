@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-text: #333333;
+  --clr-grey: #4f4f4f;
+  --clr-light-grey: #828282;
+  --clr-grey-4: #bdbdbd;
+  --clr-bg-grey: #e0e0e0;
+  --clr-bg-light-grey: #f2f2f2;
+
+  --clr-primary: #2d9cdb;
+  --clr-accent: #eb5757;
+  --clr-success: #27ae60;
+
+  --bord-radius: 12px;
+  --ff-copy: 'Poppins', sans-serif; // Poppins 300, 400, 500, 700
+  --ff-logo: 'Heebo', sans-serif; // Heebo 800
+  --fw-logo: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: var(--ff-copy);
+  font-weight: 500;
+  color: var(--clr-text);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 465px;
+  margin: 0 auto;
+}
