@@ -42,8 +42,225 @@
         <div class="hamburger">
           <span class="material-icons"> menu </span>
         </div>
-        <nav class="nav nav--hidden">NAVIGATION ON DESKTOP!!!</nav>
+        <nav class="nav nav--hidden">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Our Works</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Clients</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
       </header>
+      <section class="section hero">
+        <a href="" class="unhappy-link">Unhappy with your website?</a>
+        <h2 class="section__title">
+          We create beautiful and fast web services
+        </h2>
+        <div class="hero__image-wrapper">
+          <img
+            src="./assets/images/heroImage.jpg"
+            alt="Edie team working"
+            class="hero__image"
+          />
+        </div>
+        <h2 class="section__title">Story, emotion and purpose</h2>
+        <p class="hero__text">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <form action="#" class="contact-form">
+          <label class="contact-form__label" for="hero-email">
+            Want us to contact you?
+          </label>
+          <div class="contact-form__field">
+            <input
+              id="hero-email"
+              class="contact-form__input"
+              type="email"
+              placeholder="Email"
+            />
+            <input class="contact-form__submit" type="submit" value="Join" />
+          </div>
+        </form>
+      </section>
+      <!-- Hero -->
+
+      <section id="services" class="section services">
+        <h3 class="section__title">We offer high demandservices</h3>
+        <section class="services__item service">
+          <div class="service__design-icon">
+            <span class="material-icons"> create </span>
+          </div>
+          <h4 class="service__title">UI/UX Design</h4>
+          <p class="service__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsum est nisi, eos temporibus sint.
+          </p>
+          <button class="service__cta">Get started</button>
+        </section>
+        <section class="services__item service">
+          <div class="service__front-end-icon">
+            <span class="material-icons"> code </span>
+          </div>
+          <h4 class="service__title">Front End</h4>
+          <p class="service__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsum est nisi, eos temporibus sint.
+          </p>
+          <button class="service__cta">Get started</button>
+        </section>
+        <section class="services__item service">
+          <div class="service__back-end-icon">
+            <span class="material-icons"> dns </span>
+          </div>
+          <h4 class="service__title">Back End</h4>
+          <p class="service__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsum est nisi, eos temporibus sint.
+          </p>
+          <button class="service__cta">Get started</button>
+        </section>
+      </section>
+      <!-- Services -->
+
+      <section id="works" class="section works">
+        <h3 class="section__title">Good design means good business</h3>
+        <div class="works__project">
+          <img
+            src="./assets/images/smarthome.jpg"
+            alt="Smart home dashboard"
+            class="project__img"
+          />
+          <p class="project__category">Full stack application</p>
+          <h4 class="project__title">Smart home dashboard</h4>
+        </div>
+        <div class="works__project">
+          <img
+            src="./assets/images/onboard.png"
+            alt="Onboard mobile application"
+            class="project__img"
+          />
+          <p class="project__category">UX/UI design</p>
+          <h4 class="project__title">Onboard application</h4>
+        </div>
+        <div class="works__project">
+          <img
+            src="./assets/images/booking.png"
+            alt="Booking system mobile app"
+            class="project__img"
+          />
+          <p class="project__category">Mobile application</p>
+          <h4 class="project__title">Booking system</h4>
+        </div>
+        <div class="works__project">
+          <img
+            src="./assets/images/juice-product.png"
+            alt="Juice product homepage"
+            class="project__img"
+          />
+          <p class="project__category">Front End application</p>
+          <h4 class="project__title">Juice product homepage</h4>
+        </div>
+        <button>
+          see more <span class="material-icons"> arrow_right_alt </span>
+        </button>
+      </section>
+      <!-- Works -->
+
+      <section id="team" class="section team">
+        <p class="section__subtitle team__subtitle">Meet the team</p>
+        <h3 class="section__title">We are chilled and a laidback team</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <div class="team__pictures">
+          <div class="col">
+            <img src="./assets/images/person1.png" alt="Team member 1" />
+          </div>
+          <div class="col">
+            <img src="./assets/images/person2.png" alt="Team member 2" />
+            <img src="./assets/images/person3.png" alt="Team member 3" />
+          </div>
+        </div>
+      </section>
+      <!-- Team -->
+
+      <section id="clients" class="section clients">
+        <figure>
+          <blockquote>
+            <p>
+              Fast and outstanding resutls. Edie understands their customer’s
+              needs. They have a young and talented team.
+            </p>
+          </blockquote>
+          <figcaption>
+            <img src="./assets/images/person4.png" alt="" />
+            <p>Carlos Tran</p>
+            <p>The Decorate Gatsby</p>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- Clients -->
+
+      <footer class="footer">
+        <div class="footer-nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Our Works</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Clients</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="logo">
+            <span>Edie</span>
+          </div>
+          <div class="social">
+            <a href="#" class="social__link"
+              ><img
+                class="social__icon"
+                src="./assets/icons/instagram.svg"
+                alt="Instagram"
+            /></a>
+            <a href="#" class="social__link"
+              ><img
+                class="social__icon"
+                src="./assets/icons/linkedin.svg"
+                alt="LinkedIn"
+            /></a>
+            <a href="#" class="social__link"
+              ><img
+                class="social__icon"
+                src="./assets/icons/twitter.svg"
+                alt="Twitter"
+            /></a>
+          </div>
+        </div>
+        <form action="#" class="contact-form">
+          <label class="contact-form__label" for="hero-email">
+            Want us to contact you?
+          </label>
+          <div class="contact-form__field">
+            <input
+              id="hero-email"
+              class="contact-form__input"
+              type="email"
+              placeholder="Email"
+            />
+            <input class="contact-form__submit" type="submit" value="Join" />
+          </div>
+        </form>
+      </footer>
     </div>
+    <!-- Page wrapper -->
   </body>
 </html>
