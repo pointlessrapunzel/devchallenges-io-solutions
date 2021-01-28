@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="./assets/icons/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.min.css" />
+    <title>Interior Consultant | DevChallenges</title>
+  </head>
+  <body>
+    <header class="navbar container">
+      <div class="navbar__logo"><a href="/">This interior</a></div>
+      <a class="hamburger" href="#">
+        <div class="hamburger__bars"></div>
+      </a>
+      <nav class="navbar__nav">
+        <ul>
+          <li>
+            <a class="navbar__link navbar__link--active" href="#">Home</a>
+          </li>
+          <li><a class="navbar__link" href="#">Collection</a></li>
+          <li><a class="navbar__link" href="#">About</a></li>
+          <li><a class="navbar__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <div class="main__text">
+        <h1 class="main__title">Modern interior</h1>
+        <p class="main__description">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco&#x2011;services.
+        </p>
+        <a href="#" class="btn-more"
+          >Read more <span class="material-icons">arrow_right_alt</span></a
+        >
+      </div>
+      <div class="main__showcase">
+        <img class="showcase__image" src="./assets/photo1.png" alt="interior" />
+        <div class="showcase__card">
+          <div class="designer-info">
+            <img
+              class="designer-info__image"
+              src="./assets//photo2.png"
+              alt="Aliza Webber"
+            />
+            <div>
+              <h3 class="designer-info__name">Aliza Webber</h3>
+              <p class="designer-info__role">Interior designer</p>
+            </div>
+          </div>
+          <h2 class="card__title">Designed in 2020 by Aliza Webber</h2>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a href="#">pointlessrapunzel</a> @
+      <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb"
+        >DevChallenges.io</a
+      >
+    </footer>
+
+    <script>
+      const navBtn = document.querySelector('.hamburger')
+      const navBtnBars = navBtn.querySelector('.hamburger__bars')
+      const navigation = document.querySelector('.navbar__nav')
+      const closeClass = 'hamburger__bars--close'
+
+      const showNavOverlay = (e) => {
+        if (navBtnBars.classList.contains(closeClass)) {
+          // if closed, open
+          navigation.classList.add('slide-out')
+          navBtnBars.classList.toggle(closeClass)
+
+          setTimeout(() => {
+            navigation.classList.remove('slide-out')
+            navigation.classList.toggle('navbar__nav--overlay')
+            document.body.style.position = '' // enable scroll
+          }, 300)
+        } else {
+          // else open, make hamburger into close btn
+          navBtnBars.classList.toggle(closeClass)
+          navigation.classList.toggle('navbar__nav--overlay')
+          document.body.style.position = 'fixed' // disable scroll
+        }
+      }
+
+      navBtn.addEventListener('click', showNavOverlay)
+    </script>
+  </body>
+</html>
