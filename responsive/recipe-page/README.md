@@ -43,7 +43,7 @@
 
 ### Built With
 
-HTML, SCSS and a little bit of JS :)
+HTML and SCSS :)
 
 ## Features
 
