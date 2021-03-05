@@ -34,15 +34,20 @@
 
 ## Overview
 
+<div>
+  <img src="./screens/desktop-screen.png" alt="Desktop screenshot" width="73%">
+  <img src="./screens/mobile-screen.png" alt="Mobile screenshot" width="15%">
+</div>
+
 ### Built With
 
 HTML, SCSS and JS :)
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
+The page is fully responsive. Features a checkout form, with an interactive cart and supports saving form info to local storage.
 
-It's fully responsive
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
 ## Acknowledgements
 
