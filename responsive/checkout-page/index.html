@@ -144,6 +144,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Enter your email..."
                   required
                 />
@@ -158,6 +159,7 @@
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   placeholder="Enter your phone..."
                   required
                 />
@@ -175,8 +177,8 @@
                 <span class="material-icons"> account_circle </span>
                 <input
                   type="text"
-                  name="full-name"
-                  id="full-name"
+                  name="fullName"
+                  id="fullName"
                   placeholder="Your name..."
                   required
                 />
@@ -505,8 +507,8 @@
                   <span class="material-icons"> markunread_mailbox </span>
                   <input
                     type="text"
-                    name="postal-code"
-                    id="postal-code"
+                    name="postalCode"
+                    id="postalCode"
                     placeholder="Your postal code..."
                     required
                   />
@@ -516,7 +518,7 @@
           </div>
 
           <label class="field__label save-info-wrapper">
-            <input type="checkbox" name="save-info" id="save-info" />
+            <input type="checkbox" name="saveInfo" id="saveInfo" />
             Save this information for next time
           </label>
 
@@ -528,5 +530,7 @@
         </fieldset>
       </form>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
