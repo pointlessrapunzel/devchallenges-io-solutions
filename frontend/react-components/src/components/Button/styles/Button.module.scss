@@ -1,0 +1,124 @@
+:root {
+  // Default colours
+  --clr-default: #e0e0e0;
+  --clr-default--hover: #aeaeae;
+  --btn-shadow-clr: rgba(51, 51, 51, 0.2);
+
+  // Primary variant colours
+  --clr-primary: #2962ff;
+  --clr-primary--hover: #0039cb;
+  --btn-shadow-clr--primary: rgba(41, 98, 255, 0.2);
+
+  // Secondary variant colours
+  --clr-secondary: #455a64;
+  --clr-secondary--hover: #1c313a;
+  --btn-shadow-clr--secondary: rgba(69, 90, 100, 0.2);
+
+  // Danger variant colours
+  --clr-danger: #d32f2f;
+  --clr-danger--hover: #9a0007;
+  --btn-shadow-clr--danger: rgba(211, 47, 47, 0.2);
+
+  // Text variant colours
+  --btn-no-bg--hover: rgba(41, 98, 255, 0.1);
+
+  // Disabled colours
+  --clr-text--disabled: #9e9e9e;
+
+  // Rest
+  --btn-shadow: 0px 2px 3px;
+}
+
+.btn {
+  --bg-color: var(--clr-default);
+  color: #3f3f3f;
+  background-color: var(--bg-color);
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  padding: 8px 16px;
+
+  box-shadow: var(--btn-shadow) var(--btn-shadow-clr);
+
+  &:hover,
+  &:focus {
+    --bg-color: var(--clr-default--hover);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+
+  &--outline {
+    color: var(--clr-primary);
+    background: none;
+    box-shadow: none;
+    border: 1px solid var(--clr-primary);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-no-bg--hover);
+    }
+  }
+
+  &--text {
+    color: var(--clr-primary);
+    background: none;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-no-bg--hover);
+    }
+  }
+
+  &--primary {
+    --bg-color: var(--clr-primary);
+    color: white;
+
+    &:hover,
+    &:focus {
+      --bg-color: var(--clr-primary--hover);
+    }
+  }
+
+  &--secondary {
+    --bg-color: var(--clr-secondary);
+    color: white;
+
+    &:hover,
+    &:focus {
+      --bg-color: var(--clr-secondary--hover);
+    }
+  }
+
+  &--danger {
+    --bg-color: var(--clr-danger);
+    color: white;
+
+    &:hover,
+    &:focus {
+      --bg-color: var(--clr-danger--hover);
+    }
+  }
+
+  &--no-shadow {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    transform: none;
+    --bg-color: var(--clr-default);
+    color: var(--clr-text--disabled);
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      --bg-color: var(--clr-default);
+    }
+  }
+}
