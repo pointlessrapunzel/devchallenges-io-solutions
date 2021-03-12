@@ -15,8 +15,9 @@ const Button: React.FC<BtnProps> = ({
   let variantClass = S[`btn--${variant}`] || ''
   let colorClass = S[`btn--${color}`] || ''
   let shadowClass = disableShadow ? S[`btn--no-shadow`] : ''
+  let sizeClass = S[`btn--${size}`] || ''
 
-  let className = `${S.btn} ${variantClass} ${colorClass} ${shadowClass}`
+  let className = `${S.btn} ${variantClass} ${colorClass} ${shadowClass} ${sizeClass}`
 
   const clickHandler = () => console.log('button clicked!')
   return (
@@ -35,7 +36,7 @@ export interface BtnProps {
   startIcon?: JSX.Element
   endIcon?: JSX.Element
   size?: 'sm' | 'md' | 'lg'
-  color?: string
+  color?: 'default' | 'primary' | 'secondary' | 'danger'
 }
 
 export default Button

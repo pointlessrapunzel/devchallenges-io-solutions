@@ -71,6 +71,14 @@
     }
   }
 
+  &--sm {
+    padding: 6px 12px;
+  }
+
+  &--lg {
+    padding: 11px 22px;
+  }
+
   &--text {
     color: var(--clr-primary);
     background: none;
@@ -79,6 +87,10 @@
     &:hover,
     &:focus {
       background-color: var(--btn-no-bg--hover);
+    }
+
+    &:disabled {
+      background: none;
     }
   }
 

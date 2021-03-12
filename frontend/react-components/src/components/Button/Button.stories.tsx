@@ -9,7 +9,13 @@ export default {
   title: 'Button',
 } as Meta
 
-const Template: Story<BtnProps> = (args) => <Button {...args}>Default</Button>
+interface TemplateBtnProps extends BtnProps {
+  label: string
+}
+
+const Template: Story<TemplateBtnProps> = ({ label = 'Default', ...rest }) => (
+  <Button {...rest}>{label}</Button>
+)
 
 export const Default = Template.bind({})
 Default.args = {}
@@ -32,7 +38,15 @@ DisabledShadow.args = {
 
 export const Disabled = Template.bind({})
 Disabled.args = {
+  label: 'Disabled',
   disabled: true,
+}
+
+export const DisabledText = Template.bind({})
+DisabledText.args = {
+  label: 'Disabled',
+  disabled: true,
+  variant: 'text',
 }
 
 export const WithIconAtStart = Template.bind({})
@@ -52,6 +66,24 @@ DefaultWithIconAtStart.args = {
   startIcon: <StoreIcon />,
 }
 
+export const Small = Template.bind({})
+Small.args = {
+  color: 'primary',
+  size: 'sm',
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+  color: 'primary',
+  size: 'md',
+}
+
+export const Large = Template.bind({})
+Large.args = {
+  color: 'primary',
+  size: 'lg',
+}
+
 export const Primary = Template.bind({})
 Primary.args = {
   color: 'primary',
@@ -59,10 +91,12 @@ Primary.args = {
 
 export const Secondary = Template.bind({})
 Secondary.args = {
+  label: 'Secondary',
   color: 'secondary',
 }
 
 export const Danger = Template.bind({})
 Danger.args = {
+  label: 'Danger',
   color: 'danger',
 }
