@@ -43,6 +43,10 @@
 
   box-shadow: var(--btn-shadow) var(--btn-shadow-clr);
 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   &:hover,
   &:focus {
     --bg-color: var(--clr-default--hover);

@@ -21,7 +21,9 @@ const Button: React.FC<BtnProps> = ({
   const clickHandler = () => console.log('button clicked!')
   return (
     <button className={className} disabled={disabled} onClick={clickHandler}>
+      {startIcon && startIcon}
       {children}
+      {endIcon && endIcon}
     </button>
   )
 }
@@ -30,8 +32,8 @@ export interface BtnProps {
   variant?: 'default' | 'outline' | 'text'
   disableShadow?: boolean
   disabled?: boolean
-  startIcon?: string
-  endIcon?: string
+  startIcon?: JSX.Element
+  endIcon?: JSX.Element
   size?: 'sm' | 'md' | 'lg'
   color?: string
 }
