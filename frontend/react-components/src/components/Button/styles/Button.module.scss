@@ -29,6 +29,12 @@
   --btn-shadow: 0px 2px 3px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .btn {
   --bg-color: var(--clr-default);
   color: #3f3f3f;
